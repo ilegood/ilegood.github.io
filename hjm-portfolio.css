@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary: #2d2d30;
+  --white: #f3f3f3;
+  --yellow: #ffc60c;
+}
+
+body {
+  background-color: var(--primary);
+}
+header {
+  height: 100vh;
+}
+
+.image {
+  aspect-ratio: 16/9;
+  background-color: var(--yellow);
+  display: flex;
+  justify-self: center;
+}
