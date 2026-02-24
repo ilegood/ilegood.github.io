@@ -1,121 +1,207 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>HJM Portfolio</title>
     <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./hjm-portfolio.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <img src="./components/Logo.png" alt="" />
+      <img src="./components/Logo.png" />
       <div class="menu">
-        <a href="#a">ABOUT</a>
-        <a href="">CURRICULUM</a>
-        <a href="">SKILLS</a>
-        <a href="">PROJECTS</a>
+        <a href="#main">MAIN</a>
+        <a href="#about">ABOUT</a>
+        <a href="#curriculum">CURRICULUM</a>
+        <a href="#skills">SKILLS</a>
+        <a href="#projects">PROJECTS</a>
       </div>
     </header>
 
-    <section id="main">
-      <div class="img">
-        <div class="overlay">
-          <p>개발자 지망 000</p>
+    <div id="main">
+      <div class="hero">
+        <div class="overlay"></div>
+        <div class="content">
+          <h1>개발자 지망 000</h1>
           <p>"게임하고 싶다, 집 가고 싶다"</p>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section id="a" class="container">
-      <p>About Me</p>
+    <section id="about" class="container">
+      <h2>About Me</h2>
       <div class="profile">
-        <div class="img"></div>
-        <p>설명</p>
-        <p>이름</p>
-        <p>전번</p>
-        <p>이메일</p>
-        <p>주소</p>
-        <p>링크</p>
+        <div class="img">
+          <img src="./components/sign.png" />
+        </div>
+        <div class="details">
+          <p class="desc">설명</p>
+          <p>이름: <span class="desc">황지민</span></p>
+          <p>전화번호: <span class="desc">000-0000-0000</span></p>
+          <p>이메일: <span class="desc">abcd@test.com</span></p>
+          <p>주소: <span class="desc">서울 노원구</span></p>
+          <p>링크: <span class="desc">Github</span></p>
+        </div>
       </div>
       <div class="card-wrap">
         <div class="card">
-          <div class="clip"></div>
-          <p>Education</p>
+          <img src="./components/Clip.png" />
+          <h3>Education</h3>
         </div>
         <div class="card">
-          <div class="clip"></div>
-          <p>Award</p>
+          <img src="./components/Clip.png" />
+          <h3>Award</h3>
         </div>
       </div>
     </section>
 
-    <section id="c" class="container">
-      <p>Curriculum</p>
+    <section id="curriculum" class="container">
+      <h2>Curriculum</h2>
       <div class="box-wrap">
         <div class="box">
-          <p>예시) 2024.03 - 2024.09</p>
-          <button class="wide">+</button>
+          <div class="box-header">
+            <div class="text">
+              <p>K-디지털 트레이닝 | AI융합</p>
+              <p>2024.03 - 2024.09</p>
+            </div>
+            <button class="wide">+</button>
+          </div>
+
+          <div class="box-detail">
+            <ul>
+              <li>HTML / CSS 기초</li>
+              <li>JavaScript 비동기 처리</li>
+              <li>React SPA 제작</li>
+              <li>팀 프로젝트 2회</li>
+              <li>우와</li>
+              <li>우와</li>
+              <li>우와</li>
+              <li>우와</li>
+            </ul>
+          </div>
         </div>
         <div class="box">
-          <p>예시) 2024.03 - 2024.09</p>
-          <button class="wide">+</button>
+          <div class="box-header">
+            <p>2024.03 - 2024.09</p>
+            <button class="wide">+</button>
+          </div>
+
+          <div class="box-detail">
+            <ul>
+              <li>HTML / CSS 기초</li>
+              <li>JavaScript 비동기 처리</li>
+              <li>React SPA 제작</li>
+              <li>팀 프로젝트 2회</li>
+            </ul>
+          </div>
         </div>
         <div class="box">
-          <p>예시) 2024.03 - 2024.09</p>
-          <button class="wide">+</button>
+          <div class="box-header">
+            <p>2024.03 - 2024.09</p>
+            <button class="wide">+</button>
+          </div>
+
+          <div class="box-detail">
+            <ul>
+              <li>HTML / CSS 기초</li>
+              <li>JavaScript 비동기 처리</li>
+              <li>React SPA 제작</li>
+              <li>팀 프로젝트 2회</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="s" class="container">
-      <div class="circle">
-        <div class="stat"></div>
-        <img src="" alt="" />ICON
-      </div>
-      <div class="circle">
-        <div class="stat"></div>
-        <img src="" alt="" />ICON
-      </div>
-      <div class="circle">
-        <div class="stat"></div>
-        <img src="" alt="" />ICON
+    <section id="skills" class="container">
+      <h2>Skills</h2>
+      <div class="circle-wrap">
+        <div class="circle" data-percent="90">
+          <svg class="ring" width="120" height="120" viewBox="0 0 120 120">
+            <circle class="bg" cx="60" cy="60" r="52" />
+            <circle class="progress" cx="60" cy="60" r="52" />
+          </svg>
+
+          <div class="stat">
+            <img src="./components/bg.png" alt="icon" />
+          </div>
+        </div>
+        <div class="circle" data-percent="75">
+          <svg class="ring" width="120" height="120" viewBox="0 0 120 120">
+            <circle class="bg" cx="60" cy="60" r="52" />
+            <circle class="progress" cx="60" cy="60" r="52" />
+          </svg>
+
+          <div class="stat">
+            <img src="./components/bg.png" alt="icon" />
+          </div>
+        </div>
+        <div class="circle" data-percent="100">
+          <svg class="ring" width="120" height="120" viewBox="0 0 120 120">
+            <circle class="bg" cx="60" cy="60" r="52" />
+            <circle class="progress" cx="60" cy="60" r="52" />
+          </svg>
+
+          <div class="stat">
+            <img src="./components/bg.png" alt="icon" />
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="p" class="container">
-      <p>Recent Projects</p>
-      <button class="more">☰</button>
-      <div class="project">
-        <img src="" alt="" />
-        <p>제목</p>
-        <p>설명</p>
-        <button class="move">
-          <img src="./components/Btn.png" alt="" />
-        </button>
+    <section id="projects" class="container">
+      <div class="section-title">
+        <h2>Recent Projects <button class="more">☰</button></h2>
       </div>
+
       <div class="project">
-        <img src="" alt="" />
-        <p>제목</p>
-        <p>설명</p>
-        <button class="move">
-          <img src="./components/Btn.png" alt="" />
-        </button>
+        <div class="thumb">
+          <img src="./components/bg.png" alt="프로젝트 썸네일" />
+        </div>
+
+        <div class="info">
+          <h3>제목</h3>
+          <p>설명</p>
+          <button class="move">→</button>
+        </div>
       </div>
+
+      <div class="project reverse">
+        <div class="thumb">
+          <img src="./components/bg.png" alt="프로젝트 썸네일" />
+        </div>
+
+        <div class="info">
+          <h3>제목</h3>
+          <p>설명</p>
+          <button class="move">→</button>
+        </div>
+      </div>
+
       <div class="project">
-        <img src="" alt="" />
-        <p>제목</p>
-        <p>설명</p>
-        <button class="move">
-          <img src="./components/Btn.png" alt="" />
-        </button>
+        <div class="thumb">
+          <img src="./components/bg.png" alt="프로젝트 썸네일" />
+        </div>
+
+        <div class="info">
+          <h3>제목</h3>
+          <p>설명</p>
+          <button class="move">→</button>
+        </div>
       </div>
     </section>
+
+    <a href="#" class="flow"></a>
 
     <footer>
-      <p>이름</p>
-      <p>연락처</p>
-      <p>카피라이트</p>
+      <p>황지민</p>
+      <p>000-0000-0000 | abcd@test.com</p>
+      <p>Copyrights ©2026 by HJM. All Rights Reserved.</p>
     </footer>
     <script src="./hjm-portfolio.js"></script>
   </body>
