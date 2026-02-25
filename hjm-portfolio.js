@@ -1,3 +1,4 @@
+// 커리큘럼 박스 높이 바꾸기
 document.querySelectorAll(".box").forEach((box) => {
   const header = box.querySelector(".box-header");
   const detail = box.querySelector(".box-detail");
@@ -18,6 +19,7 @@ document.querySelectorAll(".box").forEach((box) => {
   });
 });
 
+// 원형 프로그레스 바 애니메이션
 const circles = document.querySelectorAll("#skills .circle");
 
 const skillObserver = new IntersectionObserver(
@@ -60,6 +62,7 @@ circles.forEach((circle) => {
   skillObserver.observe(circle);
 });
 
+// 각 섹션을 감지하면 애니메이션을 작동시킴
 let lastScrollY = window.scrollY;
 
 const sections = document.querySelectorAll("section");
@@ -100,8 +103,8 @@ const observer = new IntersectionObserver(
     lastScrollY = currentScrollY;
   },
   {
-    threshold: [0, 0.15, 0.3, 0.5],
-    rootMargin: "-10% 0px -10% 0px",
+    threshold: 0.1,
+    rootMargin: "-5% 0px",
   },
 );
 
