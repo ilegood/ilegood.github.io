@@ -95,6 +95,9 @@ header a:hover {
 }
 
 /* ---------------- Hero ---------------- */
+#main {
+  padding-top: 65px;
+}
 
 .hero {
   position: relative;
@@ -177,7 +180,7 @@ header a:hover {
 .card {
   flex: 1;
   padding: 30px;
-  border: 3px solid var(--point);
+  border: 2px solid var(--point);
   border-radius: 6px;
   position: relative;
   min-height: 150px;
@@ -199,7 +202,7 @@ header a:hover {
 }
 
 .box {
-  border: 3px solid var(--point);
+  border: 2px solid var(--point);
   border-radius: 6px;
   overflow: hidden;
   transition: 0.4s ease;
@@ -344,11 +347,10 @@ header a:hover {
   margin-top: 20px;
   width: 150px;
   height: 50px;
-  border: 3px solid var(--point);
+  border: 2px solid var(--point);
   border-radius: 8px;
   color: var(--point);
   font-size: 24px;
-  font-weight: bolder;
   transition: 0.2s;
 }
 
