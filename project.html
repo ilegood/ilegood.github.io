@@ -33,49 +33,60 @@
       </div>
     </div>
 
+    <div class="container">
+      <div class="filter">
+        <div class="slider"></div>
+        <div class="hover-slider"></div>
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="app">App</button>
+        <button class="filter-btn" data-filter="design">Design</button>
+      </div>
+    </div>
+
     <section>
       <div class="grid">
-        <article>
+        <article data-filter="web">
           <img src="./components/bg.png" alt="프로젝트 1 썸네일" />
           <div class="card-header">
-            <h3>Project name 1</h3>
+            <h3>Web 1</h3>
             <span>2024-01-01</span>
           </div>
           <p>description</p>
         </article>
 
-        <article>
+        <article data-filter="app">
           <img src="./components/bg.png" alt="프로젝트 2 썸네일" />
           <div class="card-header">
-            <h3>Project name 2</h3>
-            <span>2024-01-01</span>
+            <h3>App 1</h3>
+            <span>2024-01-02</span>
           </div>
           <p>description</p>
         </article>
 
-        <article>
+        <article data-filter="design">
           <img src="./components/bg.png" alt="프로젝트 3 썸네일" />
           <div class="card-header">
-            <h3>Project name 3</h3>
-            <span>2024-01-01</span>
+            <h3>Design 1</h3>
+            <span>2024-01-03</span>
           </div>
           <p>description</p>
         </article>
 
-        <article>
+        <article data-filter="web">
           <img src="./components/bg.png" alt="프로젝트 4 썸네일" />
           <div class="card-header">
-            <h3>Project name 4</h3>
-            <span>2024-01-01</span>
+            <h3>Web 2</h3>
+            <span>2024-01-04</span>
           </div>
           <p>description</p>
         </article>
 
-        <article>
+        <article data-filter="design">
           <img src="./components/bg.png" alt="프로젝트 5 썸네일" />
           <div class="card-header">
-            <h3>Project name 5</h3>
-            <span>2024-01-01</span>
+            <h3>Design 2</h3>
+            <span>2024-01-05</span>
           </div>
           <p>description</p>
         </article>
@@ -89,5 +100,7 @@
       <p>000-0000-0000 | abcd@test.com</p>
       <p>Copyrights ©2026 by HJM. All Rights Reserved.</p>
     </footer>
+
+    <script src="./project.js"></script>
   </body>
 </html>
