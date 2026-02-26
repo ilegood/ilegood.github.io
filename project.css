@@ -1,0 +1,77 @@
+/* ================================================
+   project.css  — 프로젝트 목록 페이지 전용 스타일
+   ================================================ */
+
+/* ---------------- Hero (좁은 비율) ---------------- */
+.hero {
+  aspect-ratio: 16 / 3;
+}
+
+.hero h1 {
+  color: var(--primary);
+}
+
+/* ---------------- 그리드 ---------------- */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin: 50px;
+}
+
+.grid article {
+  background: #3a3a3f;
+  padding: 20px;
+  border-radius: 12px;
+  min-height: 250px;
+  transition:
+    transform 0.3s,
+    background-color 0.3s,
+    filter 0.3s;
+}
+
+.grid article:hover {
+  transform: translateY(-8px);
+  background-color: var(--secondary);
+  color: var(--primary);
+  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.4));
+}
+
+.grid article img {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 7px 0 3px;
+}
+
+.card-header span {
+  color: var(--gray);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+/* hover 시 날짜 색상 유지 */
+.grid article:hover .card-header span {
+  color: var(--primary);
+}
+
+/* ---------------- Media Query ---------------- */
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 736px) {
+  .grid {
+    grid-template-columns: 1fr;
+    margin: 20px;
+  }
+}

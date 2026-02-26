@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HJM Portfolio</title>
-    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./common.css" />
     <link rel="stylesheet" href="./hjm-portfolio.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
@@ -13,16 +13,17 @@
   </head>
   <body>
     <header>
-      <img src="./components/Logo.png" />
-      <div class="menu">
+      <a href="#"><img src="./components/Logo.png" alt="HJM 로고" /></a>
+      <nav class="menu">
         <a href="#main">MAIN</a>
         <a href="#about">ABOUT</a>
         <a href="#curriculum">CURRICULUM</a>
         <a href="#skills">SKILLS</a>
         <a href="#projects">PROJECTS</a>
-      </div>
+      </nav>
     </header>
 
+    <!-- Hero -->
     <div id="main">
       <div class="hero">
         <div class="overlay"></div>
@@ -33,11 +34,12 @@
       </div>
     </div>
 
+    <!-- About -->
     <section id="about" class="container">
       <h2>About Me</h2>
       <div class="profile">
         <div class="img">
-          <img src="./components/sign.png" />
+          <img src="./components/sign.png" alt="프로필 이미지" />
         </div>
         <div class="details">
           <p class="desc">설명</p>
@@ -45,21 +47,22 @@
           <p>전화번호: <span class="desc">000-0000-0000</span></p>
           <p>이메일: <span class="desc">abcd@test.com</span></p>
           <p>주소: <span class="desc">서울 노원구</span></p>
-          <p>링크: <span class="desc">Github</span></p>
+          <p>링크: <a href="#" class="desc">Github</a></p>
         </div>
       </div>
       <div class="card-wrap">
         <div class="card">
-          <img src="./components/Clip.png" />
+          <img src="./components/Clip.png" alt="" />
           <h3>Education</h3>
         </div>
         <div class="card">
-          <img src="./components/Clip.png" />
+          <img src="./components/Clip.png" alt="" />
           <h3>Award</h3>
         </div>
       </div>
     </section>
 
+    <!-- Curriculum -->
     <section id="curriculum" class="container">
       <h2>Curriculum</h2>
       <div class="box-wrap">
@@ -69,28 +72,8 @@
               <p>K-디지털 트레이닝 | AI융합</p>
               <p>2024.03 - 2024.09</p>
             </div>
-            <button class="wide">+</button>
+            <button class="wide" aria-label="펼치기">+</button>
           </div>
-
-          <div class="box-detail">
-            <ul>
-              <li>HTML / CSS 기초</li>
-              <li>JavaScript 비동기 처리</li>
-              <li>React SPA 제작</li>
-              <li>팀 프로젝트 2회</li>
-              <li>우와</li>
-              <li>우와</li>
-              <li>우와</li>
-              <li>우와</li>
-            </ul>
-          </div>
-        </div>
-        <div class="box">
-          <div class="box-header">
-            <p>2024.03 - 2024.09</p>
-            <button class="wide">+</button>
-          </div>
-
           <div class="box-detail">
             <ul>
               <li>HTML / CSS 기초</li>
@@ -100,12 +83,27 @@
             </ul>
           </div>
         </div>
+
         <div class="box">
           <div class="box-header">
             <p>2024.03 - 2024.09</p>
-            <button class="wide">+</button>
+            <button class="wide" aria-label="펼치기">+</button>
           </div>
+          <div class="box-detail">
+            <ul>
+              <li>HTML / CSS 기초</li>
+              <li>JavaScript 비동기 처리</li>
+              <li>React SPA 제작</li>
+              <li>팀 프로젝트 2회</li>
+            </ul>
+          </div>
+        </div>
 
+        <div class="box">
+          <div class="box-header">
+            <p>2024.03 - 2024.09</p>
+            <button class="wide" aria-label="펼치기">+</button>
+          </div>
           <div class="box-detail">
             <ul>
               <li>HTML / CSS 기초</li>
@@ -115,91 +113,93 @@
       </div>
     </section>
 
+    <!-- Skills -->
     <section id="skills" class="container">
       <h2>Skills</h2>
       <div class="circle-wrap">
         <div class="circle" data-percent="90">
-          <svg class="ring" width="120" height="120" viewBox="0 0 120 120">
+          <svg class="ring" viewBox="0 0 120 120" aria-hidden="true">
             <circle class="bg" cx="60" cy="60" r="52" />
             <circle class="progress" cx="60" cy="60" r="52" />
           </svg>
-
           <div class="stat">
-            <img src="./components/bg.png" alt="icon" />
+            <img src="./components/bg.png" alt="HTML" />
           </div>
         </div>
         <div class="circle" data-percent="75">
-          <svg class="ring" width="120" height="120" viewBox="0 0 120 120">
+          <svg class="ring" viewBox="0 0 120 120" aria-hidden="true">
             <circle class="bg" cx="60" cy="60" r="52" />
             <circle class="progress" cx="60" cy="60" r="52" />
           </svg>
-
           <div class="stat">
-            <img src="./components/bg.png" alt="icon" />
+            <img src="./components/bg.png" alt="CSS" />
           </div>
         </div>
         <div class="circle" data-percent="100">
-          <svg class="ring" width="120" height="120" viewBox="0 0 120 120">
+          <svg class="ring" viewBox="0 0 120 120" aria-hidden="true">
             <circle class="bg" cx="60" cy="60" r="52" />
             <circle class="progress" cx="60" cy="60" r="52" />
           </svg>
-
           <div class="stat">
-            <img src="./components/bg.png" alt="icon" />
+            <img src="./components/bg.png" alt="JavaScript" />
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Projects -->
     <section id="projects" class="container">
       <div class="section-title">
-        <h2>Recent Projects <button class="more">☰</button></h2>
+        <h2>
+          Recent Projects
+          <a href="./project.html" class="more" aria-label="전체 프로젝트 보기"
+            >☰</a
+          >
+        </h2>
       </div>
 
       <div class="project">
         <div class="thumb">
-          <img src="./components/bg.png" alt="프로젝트 썸네일" />
+          <img src="./components/bg.png" alt="프로젝트 1 썸네일" />
         </div>
-
         <div class="info">
-          <h3>제목</h3>
+          <h3>Project 1</h3>
           <p>설명</p>
-          <button class="move">→</button>
+          <button class="move" aria-label="프로젝트 1 보기">→</button>
         </div>
       </div>
 
       <div class="project reverse">
         <div class="thumb">
-          <img src="./components/bg.png" alt="프로젝트 썸네일" />
+          <img src="./components/bg.png" alt="프로젝트 2 썸네일" />
         </div>
-
         <div class="info">
-          <h3>제목</h3>
+          <h3>Project 2</h3>
           <p>설명</p>
-          <button class="move">→</button>
+          <button class="move" aria-label="프로젝트 2 보기">→</button>
         </div>
       </div>
 
       <div class="project">
         <div class="thumb">
-          <img src="./components/bg.png" alt="프로젝트 썸네일" />
+          <img src="./components/bg.png" alt="프로젝트 3 썸네일" />
         </div>
-
         <div class="info">
-          <h3>제목</h3>
+          <h3>Project 3</h3>
           <p>설명</p>
-          <button class="move">→</button>
+          <button class="move" aria-label="프로젝트 3 보기">→</button>
         </div>
       </div>
     </section>
 
-    <div class="flow"><a href="#">↑</a></div>
+    <div class="flow"><a href="#" aria-label="맨 위로">↑</a></div>
 
     <footer>
       <p>황지민</p>
       <p>000-0000-0000 | abcd@test.com</p>
       <p>Copyrights ©2026 by HJM. All Rights Reserved.</p>
     </footer>
+
     <script src="./hjm-portfolio.js"></script>
   </body>
 </html>
