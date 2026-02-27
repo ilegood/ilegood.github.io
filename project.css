@@ -73,14 +73,14 @@
 }
 
 /* ---------------- 그리드 ---------------- */
-.grid {
+.project-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   margin: 20px 50px;
 }
 
-.grid article {
+.project-list article {
   background: #3a3a3f;
   padding: 20px;
   border-radius: 12px;
@@ -91,14 +91,19 @@
     filter 0.3s;
 }
 
-.grid article:hover {
+.project-list a {
+  text-decoration: none;
+  color: var(--secondary);
+}
+
+.project-list article:hover {
   transform: translateY(-8px);
   background-color: var(--secondary);
   color: var(--primary);
   filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.4));
 }
 
-.grid article img {
+.project-list article img {
   border-radius: 10px;
   width: 100%;
   height: auto;
@@ -119,19 +124,19 @@
 }
 
 /* hover 시 날짜 색상 유지 */
-.grid article:hover .card-header span {
+.project-list article:hover .card-header span {
   color: var(--primary);
 }
 
 /* ---------------- Media Query ---------------- */
 @media (max-width: 1024px) {
-  .grid {
+  .project-list {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 736px) {
-  .grid {
+  .project-list {
     grid-template-columns: 1fr;
     margin: 20px;
   }
