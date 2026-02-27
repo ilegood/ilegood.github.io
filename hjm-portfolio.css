@@ -130,6 +130,8 @@ h2 {
 
 .box-detail li {
   margin: 8px 0;
+  list-style: disc;
+  list-style-position: inside;
 }
 
 .wide {

@@ -6,7 +6,7 @@ document.querySelectorAll(".box").forEach((box) => {
 
   header.addEventListener("click", () => {
     const isOpen = box.classList.toggle("active");
-    detail.style.maxHeight = isOpen ? detail.scrollHeight + "px" : null;
+    detail.style.maxHeight = isOpen ? detail.scrollHeight + 30 + "px" : null;
     btn.textContent = isOpen ? "–" : "+";
   });
 });
@@ -76,3 +76,13 @@ const sectionObserver = new IntersectionObserver(
 );
 
 sections.forEach((sec) => sectionObserver.observe(sec));
+
+// menu 화살표
+const box = document.querySelector(".menu-item");
+const arrow = document.querySelector(".menu-item > a");
+box.addEventListener("mouseenter", () => {
+  arrow.textContent = "PROJECTS ▴";
+});
+box.addEventListener("mouseleave", () => {
+  arrow.textContent = "PROJECTS ▾";
+});

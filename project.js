@@ -70,3 +70,13 @@ filter.addEventListener("mousemove", (e) => {
 filter.addEventListener("mouseleave", () => {
   hover.style.opacity = "0";
 });
+
+// menu 화살표
+const box = document.querySelector(".menu-item");
+const arrow = document.querySelector(".menu-item > a");
+box.addEventListener("mouseenter", () => {
+  arrow.textContent = "PROJECTS ▴";
+});
+box.addEventListener("mouseleave", () => {
+  arrow.textContent = "PROJECTS ▾";
+});

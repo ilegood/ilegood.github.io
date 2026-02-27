@@ -120,13 +120,43 @@ header .menu a {
   text-decoration: none;
   font-size: 18px;
   font-weight: 300;
-  margin-left: 40px;
+  margin: 0 20px;
   transition: 0.2s;
 }
 
 header a:hover {
   text-decoration: underline;
   color: var(--point);
+}
+
+header .menu-item {
+  position: relative;
+  display: inline-block;
+}
+
+header .flow-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 120%;
+  display: none;
+  flex-direction: column;
+  padding: 10px 0 20px;
+  border-radius: 10px;
+  background-color: var(--primary);
+}
+
+header .menu-item:hover .flow-menu {
+  display: flex;
+}
+
+header .menu-item:hover > a {
+  text-decoration: underline;
+  color: var(--point);
+}
+
+header .flow-menu a {
+  font-size: 14px;
 }
 
 /* ---------------- Hero ---------------- */
