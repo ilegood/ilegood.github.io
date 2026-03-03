@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+/*---------- Header ----------*/
+header {
+  width: 100%;
+  height: 100px;
+  background-color: red;
+}

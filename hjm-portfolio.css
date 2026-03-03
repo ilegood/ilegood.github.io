@@ -56,7 +56,8 @@ h2 {
 
 .details .desc {
   color: var(--secondary);
-  margin-bottom: 100px;
+  margin-bottom: 20px;
+  font-size: 14px;
 }
 
 /* 카드 (Education / Award) */
@@ -80,11 +81,6 @@ h2 {
   top: -48px;
   right: 40px;
   width: 24px;
-}
-
-.card li {
-  list-style: disc;
-  list-style-position: inside;
 }
 
 /* ---------------- Curriculum ---------------- */
@@ -198,7 +194,7 @@ h2 {
 }
 
 .circle .stat img {
-  width: 60%;
+  width: 50%;
   aspect-ratio: 1;
   object-fit: cover;
   border-radius: 10px;
@@ -212,8 +208,8 @@ h2 {
 }
 
 .page {
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background-color: var(--secondary);
   transition: 0.2s ease;
@@ -256,6 +252,11 @@ h2 {
   max-width: 450px;
   border-radius: 8px;
   display: block;
+  transition: 0.2s ease;
+}
+
+.thumb img:hover {
+  scale: 102%;
 }
 
 .info {

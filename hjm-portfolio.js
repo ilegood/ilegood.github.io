@@ -44,9 +44,9 @@ const skillObserver = new IntersectionObserver(
 // 스킬 데이터 관리
 const skillData = [
   [
-    { percent: 90, url: "./components/bg.png" },
-    { percent: 75, url: "./components/bg.png" },
-    { percent: 100, url: "./components/bg.png" },
+    { percent: 90, url: "./components/html_logo.png" },
+    { percent: 100, url: "./components/css_logo.png" },
+    { percent: 75, url: "./components/js_logo.png" },
   ],
   [
     { percent: 80, url: "./components/bg.png" },
