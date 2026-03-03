@@ -41,9 +41,59 @@ const skillObserver = new IntersectionObserver(
   { threshold: 0.5 },
 );
 
-document
-  .querySelectorAll("#skills .circle")
-  .forEach((c) => skillObserver.observe(c));
+// 스킬 데이터 관리
+const skillData = [
+  [
+    { percent: 90, url: "./components/bg.png" },
+    { percent: 75, url: "./components/bg.png" },
+    { percent: 100, url: "./components/bg.png" },
+  ],
+  [
+    { percent: 80, url: "./components/bg.png" },
+    { percent: 70, url: "./components/bg.png" },
+    { percent: 85, url: "./components/bg.png" },
+  ],
+  [
+    { percent: 60, url: "./components/bg.png" },
+    { percent: 75, url: "./components/bg.png" },
+    { percent: 90, url: "./components/bg.png" },
+  ],
+];
+
+const content = document.querySelector("#skillsContents");
+const pages = document.querySelectorAll(".page");
+
+function renderSkills(index) {
+  content.innerHTML = skillData[index]
+    .map(
+      (skill) => `
+    <div class="circle" data-percent="${skill.percent}">
+      <svg class="ring" viewBox="0 0 120 120">
+        <circle class="bg" cx="60" cy="60" r="52" />
+        <circle class="progress" cx="60" cy="60" r="52" />
+      </svg>
+      <div class="stat">
+      <img src="${skill.url}">
+      </div>
+    </div>
+  `,
+    )
+    .join("");
+
+  document
+    .querySelectorAll("#skills .circle")
+    .forEach((c) => skillObserver.observe(c));
+}
+
+pages.forEach((page, index) => {
+  page.addEventListener("click", () => {
+    pages.forEach((p) => p.classList.remove("active"));
+    page.classList.add("active");
+    renderSkills(index);
+  });
+});
+
+renderSkills(0);
 
 // 섹션 스크롤 Reveal
 let lastScrollY = window.scrollY;

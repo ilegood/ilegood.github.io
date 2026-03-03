@@ -82,6 +82,11 @@ h2 {
   width: 24px;
 }
 
+.card li {
+  list-style: disc;
+  list-style-position: inside;
+}
+
 /* ---------------- Curriculum ---------------- */
 .box-wrap {
   display: flex;
@@ -140,6 +145,10 @@ h2 {
 }
 
 /* ---------------- Skills ---------------- */
+.slider {
+  width: 100%;
+}
+
 .circle-wrap {
   display: flex;
   gap: 80px;
@@ -193,6 +202,25 @@ h2 {
   aspect-ratio: 1;
   object-fit: cover;
   border-radius: 10px;
+}
+
+.page-box {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.page {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--secondary);
+  transition: 0.2s ease;
+}
+
+.page.active {
+  background-color: var(--point);
 }
 
 /* ---------------- Projects ---------------- */
