@@ -138,16 +138,34 @@ header .flow-menu {
   top: 100%;
   left: 0;
   width: 120%;
-  display: none;
+  display: flex;
   flex-direction: column;
-  padding: 10px 0 10px;
-  border-radius: 10px;
+  padding: 10px 0;
+  border-radius: 5px;
   gap: 5px;
   background-color: var(--primary);
+
+  transform: translateY(-15px);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition:
+    transform 0.18s ease,
+    opacity 0.18s ease,
+    visibility 0.18s ease;
 }
 
 header .menu-item:hover .flow-menu {
-  display: flex;
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+
+  transition:
+    transform 0.35s ease,
+    opacity 0.35s ease,
+    visibility 0.35s ease;
 }
 
 header .menu-item:hover > a {
